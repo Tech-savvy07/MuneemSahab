@@ -1,15 +1,15 @@
 <header class="header-pr nav-bg-w main-header navfix fixed-top menu-white">
 	<div class="container-fluid m-pad">
 		<div class="menu-header">
-			<div class="dsk-logo"><a class="nav-brand" href="index.html">
-					<h4 class="mega-white-logo">Muneem Sahab</h4>
-					<h4 class="mega-darks-logo">Muneem Sahab</h4>
+			<div class="dsk-logo"><a class="nav-brand" href="/">
+					<h4 class="mega-white-logo">{{$websiteSetting['company_name']}}</h4>
+					<h4 class="mega-darks-logo">{{$websiteSetting['company_name']}}</h4>
 				</a>
 			</div>
 			<div class="custom-nav" role="navigation">
 				<ul class="nav-list">
 					<li class="sbmenu">
-						<a href="#." class="menu-links">Home</a>
+						<a href="/" class="menu-links">Home</a>
 						<!-- <div class="nx-dropdown">
 							<div class="sub-menu-section">
 								<div class="container">

@@ -56,6 +56,7 @@ class IndexController extends Controller
                 $contact->email = $data['email'];
                 $contact->message = $data['message'];
 
+                // print_r($data);die;
                 if ($contact->save()) {
                     alert()->success('We will contact you soon', 'Thank You!')->persistent('Close');
                     return redirect('/');

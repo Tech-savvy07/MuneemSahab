@@ -16,6 +16,7 @@
 	<!--Start Header -->
 	@include('layout.header')
 	<!--End Header -->
+	@include('sweetalert::alert')
 
 	@yield('content')
 

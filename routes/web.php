@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\InsuranceController;
+use App\Http\Controllers\MutualFundController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [IndexController::class, 'index']);
+Route::get('/contact', [IndexController::class, 'contact']);
+Route::post('/saveContact', [IndexController::class, 'saveContact']);
+Route::get('/insurance', [InsuranceController::class, 'insurance']);
+Route::get('/mutualFund', [MutualFundController::class, 'mutualFund']);

@@ -7,7 +7,10 @@
 	<div class="container">
 		<div class="row justify-content-between">
 			<div class="col-lg-4 col-sm-6  ftr-brand-pp">
-				<a class="navbar-brand mb30 mt30" href="#"> <img src="images/white-logo.png" alt="Logo" width="100" /></a>
+				<a class="navbar-brand mb30 mt30" href="#">
+				{{$websiteSetting['company_name']}}
+					 <!-- <img src="images/white-logo.png" alt="Logo" width="100" /> -->
+					</a>
 				<p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
 				<div class="ff-social-icons mt30">
 					<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
@@ -21,15 +24,15 @@
 				<ul class="footer-address-list ftr-details">
 					<li>
 						<span><i class="fas fa-envelope"></i></span>
-						<p>Email <span> <a href="https://separateweb.com/cdn-cgi/l/email-protection#f891969e97b89a8d8b91969d8b8b9699959dd69b9795"><span class="__cf_email__" data-cfemail="1871767e77587a6d6b71767d6b6b7679757d367b7775">[email&#160;protected]</span></a></span></p>
+						<p>Email <span> <a href="https://separateweb.com/cdn-cgi/l/email-protection#f891969e97b89a8d8b91969d8b8b9699959dd69b9795"><span class="__cf_email__" data-cfemail="1871767e77587a6d6b71767d6b6b7679757d367b7775">{{$websiteSetting['email']}}</span></a></span></p>
 					</li>
 					<li>
 						<span><i class="fas fa-phone-alt"></i></span>
-						<p>Phone <span> <a href="tel:+10000000000">+1 0000 000 000</a></span></p>
+						<p>Phone <span> <a href="tel:+10000000000">{{$websiteSetting['mobile']}}</a></span></p>
 					</li>
 					<li>
 						<span><i class="fas fa-map-marker-alt"></i></span>
-						<p>Address <span> 123 Business Centre London SW1A 1AA</span></p>
+						<p>Address <span>{{$websiteSetting['address']}}</span></p>
 					</li>
 				</ul>
 			</div>
@@ -83,7 +86,7 @@
 		<div class="row end-footer-">
 			<div class="col-lg-6">
 				<div class="footer-copyrights-">
-					<p>© 2020-2022. All Rights Reserved By <a href="https://themeforest.net/user/rajesh-doot/portfolio" target="blank">Rajesh Doot</a></p>
+					<p>© 2020-2022. All Rights Reserved By <a href="https://themeforest.net/user/rajesh-doot/portfolio" target="blank">{{$websiteSetting['company_name']}}</a></p>
 				</div>
 			</div>
 			<div class="col-lg-6">
