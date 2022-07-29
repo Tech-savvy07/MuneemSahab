@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\WebsiteSetting;
 use App\Models\Service;
+use App\Models\Page;
 use App\Models\Contact;
 use App\Models\Card;
 use App\Models\Appointment;
@@ -21,19 +22,43 @@ class IndexController extends Controller
         $websiteSetting = WebsiteSetting::getWebsiteSettingByVendorId($vendor_id);
         $service = Service::getServiceByVendorId($vendor_id); 
         $serviceWithSubservice = Service::getServiceWithSubserviceByVendorId($vendor_id);    
-        $card = Card::getCardByVendorId($vendor_id);    
+        $card = Card::getCardByVendorId($vendor_id);
         // echo "<pre>";
-        // print_r($websiteSetting);
+        // print_r($serviceWithSubservice);
         // die;
         return view('index')->with(compact('websiteSetting','service','card','serviceWithSubservice'));
     }
-    // Contact
-    public function contact()
+
+    // About
+    public function about()
     { 
+        $currentURL = request()->segment(count(request()->segments()));
+        $page = Page::getPageByPageName($currentURL); 
         $vendor_id = Config::get('const.VENDOR_ID');
         $websiteSetting = WebsiteSetting::getWebsiteSettingByVendorId($vendor_id);
-        return view('contact', compact('websiteSetting'));
+        $service = Service::getServiceByVendorId($vendor_id); 
+        $serviceWithSubservice = Service::getServiceWithSubserviceByVendorId($vendor_id);   
+        // echo "<pre>";
+        // print_r($page->page_name);
+        // die; 
+        return view('about', compact('websiteSetting','serviceWithSubservice','service','page'));
     }
+
+    // Service Dynamic Page 
+    public function services(Request $request)
+    {
+        $vendor_id = Config::get('const.VENDOR_ID');
+        $websiteSetting = WebsiteSetting::getWebsiteSettingByVendorId($vendor_id);
+        $service = Service::getServiceByVendorId($vendor_id); 
+        $serviceWithSubservice = Service::getServiceWithSubserviceByVendorId($vendor_id); 
+        $service = $request->route()->uri();
+        // echo "<pre>";
+        // print_r($service);
+        // die;
+        return view('service', compact('websiteSetting','serviceWithSubservice','service'));
+    }
+
+
 
     //Save contact
     public function saveContact(Request $request)

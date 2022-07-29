@@ -8,8 +8,8 @@
 	<!--Start Preloader -->
 	<div class="onloadpage" id="page_loader">
 		<div class="pre-content">
-			<div class="logo-pre"><img src="images/logo.png" alt="Logo" class="img-fluid" /></div>
-			<div class="pre-text- text-radius text-light text-animation bg-b">Niwax - Creative Agency & Portfolio HTML Template Are 2 Seconds Away. Have Patience</div>
+			<div class="logo-pre"><img src="https://prayagrajxport.com/front_assets/images/pxlogo.png" alt="Logo" class="img-fluid" /></div>
+			<div class="pre-text- text-radius text-light text-animation bg-b">Muneem Sahab | Solution of your Business </div>
 		</div>
 	</div>
 	<!--End Preloader -->

@@ -4,6 +4,8 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\InsuranceController;
 use App\Http\Controllers\MutualFundController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Service;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +18,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Page Render
 
 Route::get('/', [IndexController::class, 'index']);
-Route::get('/contact', [IndexController::class, 'contact']);
-Route::post('/saveContact', [IndexController::class, 'saveContact']);
+$serviceUrls=Service::select('service_url')->where(['is_active'=>1])->get()->pluck('service_url')->toArray();
+    foreach($serviceUrls as $url){
+        Route::get('/'.$url, [IndexController::class, 'services']);
+    }
+Route::get('/about', [IndexController::class, 'about']);
 Route::get('/insurance', [InsuranceController::class, 'insurance']);
 Route::get('/mutualFund', [MutualFundController::class, 'mutualFund']);
+
+
+// Backend API
+Route::post('/saveContact', [IndexController::class, 'saveContact']);

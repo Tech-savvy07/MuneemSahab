@@ -110,9 +110,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="common-heading ptag">
-                    <span>We Have Worked with multiple clients</span>
-                    <h2>Let's make insurance easy for you</h2>
-                    <p>Successfully delivered digital products Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <span>{{$page->page_tagline}}</span>
+                    <h2>{{$page->page_name}}</h2>
+                    <p>{{$page->page_short_desc}}</p>
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
 			<div class="col-lg-8">
 				<div class="common-heading-2">
 					<span class="text-effect-1">Our happy customers</span>
-					<h2 class="mb30">Some of Our Investors</h2>
+					<h2 class="mb30">Some of Our Partners</h2>
 				</div>
 			</div>
 		</div>

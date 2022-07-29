@@ -79,7 +79,7 @@
 						</div> -->
 					</li>
 					<li class="sbmenu">
-						<a href="#" class="menu-links">About</a>
+						<a href="about" class="menu-links">About</a>
 						<!-- <div class="nx-dropdown">
 							<div class="sub-menu-section">
 								<div class="container">
@@ -129,8 +129,8 @@
 							</div>
 						</div> -->
 					</li>
-					<li class="sbmenu">
-						<a href="#" class="menu-links">How it works</a>
+					<!-- <li class="sbmenu">
+						<a href="insurance" class="menu-links">Insurance</a> -->
 						<!-- <div class="nx-dropdown">
 							<div class="sub-menu-section">
 								<div class="container">
@@ -172,7 +172,7 @@
 								</div>
 							</div>
 						</div> -->
-					</li>
+					<!-- </li> -->
 					<li class="sbmenu">
 						<a href="#" class="menu-links">Services</a>
 						@if(!empty($serviceWithSubservice))
@@ -187,7 +187,7 @@
 												<ul>
 													@foreach($service['get_subservices'] as $subrow)
 													<!-- <li><a href="index-2.html">All Demo <span class="badge bg-primary">New</span></a></li> -->
-													<li><a href="#">{{$subrow['subservice_name']}}</a></li>
+													<li><a href="{{$service['service_url']}}#{{$subrow['subservice_url']}}">{{$subrow['subservice_name']}}</a></li>
 													@endforeach
 												</ul>
 											</div>
@@ -283,7 +283,7 @@
 					</ul> -->
 				</li>
 				<li>
-					<a href="#">About</a>
+					<a href="about">About</a>
 					<!-- <ul>
 						<li><a href="about.html">About Us</a></li>
 						<li><a href="why-us.html">Why Us</a></li>
@@ -310,8 +310,8 @@
 					</ul> -->
 				</li>
 				<li>
-					<a href="#">How it Works</a>
-					<ul>
+					<a href="insurance">Insurance</a>
+					<!-- <ul>
 						<li><a href="pricing.html">Pricing</a></li>
 						<li><a href="typography.html">Typography</a></li>
 						<li><a href="button.html">Buttons</a></li>
@@ -328,7 +328,7 @@
 						<li><a href="popup-modal.html">Popup Modal</a></li>
 						<li><a href="lists.html">Lists</a></li>
 						<li><a href="bootstrap-components.html">Bootstrap Components</a></li>
-					</ul>
+					</ul> -->
 				</li>
 				<li>
 					<a href="#">Services</a>
@@ -344,7 +344,7 @@
 					@endif
 				</li>
 				<li>
-					<a href="#">Blog</a>
+					<a href="#"></a>
 					<!-- <ul>
 						<li><a href="blog-grid-1.html">Blog Grid 1</a> </li>
 						<li><a href="blog-grid-2.html">Blog Grid 2</a> </li>

@@ -163,7 +163,7 @@
 			<div class="col-lg-4 mt30">
 				<div class="single-blog-post- up-hor shdo">
 					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-1.jpg" alt="girl" class="img-fluid" /></a>
+						<a href="#"><img src="images/blog/card4.jpeg" alt="girl" class="img-fluid" /></a>
 					</div>
 					<div class="blog-content-tt pt20">
 						<div class="single-blog-info-">
@@ -189,7 +189,7 @@
 			<div class="col-lg-4 mt30">
 				<div class="single-blog-post- up-hor shdo">
 					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-2.jpg" alt="girl" class="img-fluid" /></a>
+						<a href="#"><img src="images/blog/card2.jpeg" alt="girl" class="img-fluid" /></a>
 					</div>
 					<div class="blog-content-tt pt20">
 						<div class="single-blog-info-">
@@ -197,18 +197,6 @@
 							<h4><a href="#">Return filing</a></h4>
 							<p><b>Make an appointment</b></p>
 						</div>
-						<!-- <div class="post-social">
-							<div class="ss-inline-share-content">
-								<div class="ss-social-icons-container">
-									<a href="javascript:void(0)">Shares</a>
-									<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
-									<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-									<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-									<a href="javascript:void(0)" target="blank"><i class="fas fa-envelope"></i></a>
-									<a href="javascript:void(0)" target="blank"><i class="fab fa-facebook-messenger"></i></a>
-								</div>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -216,13 +204,13 @@
 			<div class="col-lg-4 mt30">
 				<div class="single-blog-post- up-hor shdo">
 					<div class="single-blog-img-">
-						<a href="#"><img src="images/blog/blog-dg-3.jpg" alt="girl" class="img-fluid" /></a>
+						<a href="#"><img src="images/blog/card7.jpeg" alt="girl" class="img-fluid" /></a>
 					</div>
 					<div class="blog-content-tt pt20">
 						<div class="single-blog-info-">
 							<!-- <p class="mb10"><i class="fas fa-clock"></i> Sep 23, 2020</p> -->
 							<h4><a href="#">Working Time</a></h4>
-							<p>Monday - Friday : 9 am to 6 pm</p>
+							<p><span class="text-bold">Monday - Friday :</span> 9 am to 6 pm</p>
 						</div>
 						<!-- <div class="post-social">
 							<div class="ss-inline-share-content">
